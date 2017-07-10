@@ -96,7 +96,7 @@ header {
 
 .room {
     display: flex;
-    background-image: url("/Users/StevenD/documents/tiy/week-one-project/images/background-3.jpg");
+    background-image: url("images/background-3.jpg");
     max-height: 240px;
     background-position: center;
     background-attachment: fixed;
