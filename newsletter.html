@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="shortcut icon" href="week-one-project/images/favicon-96x96.png">
+  <link rel="stylesheet" href="newsletter.css">
+  <meta charset="utf-8">
+  <title>Bent Creek Ceramics</title>
+</head>
+
+<body class="bg">
+  <header>
+    <a href="./index.html"><img src="../week-one-project/images/bent-creek-logo.png" alt="Website logo" style="width:40px;height:45px" />
+    <nav id="main-navigation">
+      <a href="./index.html">Home</a>
+      <a href="./About.html">About</a>
+      <a href="./newsletter.html">Newsletter</a>
+    </nav>
+  </header>
+  <main id="enroll">
+         <section class="signUp">
+               <h3 id="signUp">Sign Up for Weekly Newsletter</h3>
+               <p>Stay up to date with events, activities, news and specials</p>
+               <form>
+                 <label for="name"></label>
+                 <input type="text" id="nameInput" name="name" value="Name">
+                 <br>
+                 <label for="email"></label>
+                 <input type="email" id="emailInput" name="email" value="Email">
+                 <input type="submit" id="signupButton" value="Submit">
+               </form>
+             </div>
+         </section>
+       </main>
+       <script type="text/javascript">
+         var nameInput = document.getElementById('nameInput');
+         var emailInput = document.getElementById('emailInput');
+         var signupButton = document.getElementById('signupButton');
+         signupButton.addEventListener('click', function(e) {
+           var nameVal = nameInput.value;
+           var emailVal = emailInput.value;
+           if (nameVal && emailVal) {
+             alert('Thanks for signing up, ' + nameVal + '. Newsletters will be sent to ' + emailVal);
+             nameInput.value = "";
+             emailInput.value = "";
+           } else {
+             alert('We would love for you to sign up, please provide both your name and email address.');
+           }
+         });
+       </script>
+   </body>
+
+ </html>
